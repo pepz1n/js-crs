@@ -1,16 +1,16 @@
-const vetor = [12, 'string', false, 8.2];
-const vetorEstatico = new Array(1000);
+// const vetor = [12, 'string', false, 8.2];
+// const vetorEstatico = new Array(1000);
 
-const vetorVazio = [];
+// const vetorVazio = [];
 
-const vetorAtividade = [2, 4, 7, -2, 1, 1000000, 44, 33, 51]
+// const vetorAtividade = [2, 4, 7, -2, 1, 1000000, 44, 33, 51]
 
-// vetorVazio.unshift(2);
-vetorVazio.push('o');//0
-vetorVazio.push('bernardo');//1
-vetorVazio.push('é');//2
-vetorVazio.push('mto');//3
-vetorVazio.push('bom!');//4
+// // vetorVazio.unshift(2);
+// vetorVazio.push('o');//0
+// vetorVazio.push('bernardo');//1
+// vetorVazio.push('é');//2
+// vetorVazio.push('mto');//3
+// vetorVazio.push('bom!');//4
 
 // console.log('antes do shift:');
 
@@ -48,5 +48,14 @@ vetorVazio.push('bom!');//4
 
 
 // 1- const vetorAtividade = [2, 4, 7, -2, 1, 1000000, 44, 33, 51] Filtrar todos os valores pares do vetor.
-// 2 - com o mesmo vetor remapea-lo a fim de criar um novo veto cujo tenha o texto "numero: <>, posicao: <i>"
-// 3 - fazer uma sequencia fibonacci com .reduce;
+// 2 - com o mesmo vetor remapea-lo a fim de criar um novo veto cujo tenha o texto "numero: 2, posicao: 0"
+// 3 - fazer uma sequencia fibonacci com .reduce ou com qualquer outra forma que guarde os valores em um vetor;
+
+const atividade1 = [2, 4, 7, -2, 1, 1000000, 44, 33, 51];
+
+// const pares = atividade1.filter((item) => item % 2 === 0);
+
+// console.log(pares);
+
+const remapear = atividade1.map((item, i) => `numero: ${item}, posicao: ${i}`)
+console.log(remapear);
